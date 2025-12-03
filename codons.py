@@ -1,14 +1,14 @@
 def create_codon_dict(file_path):
-  codon_dict={}
+  codon_dict = {}
     
   with open(file_path) as file:
      rows= file.readlines()
      
   for now in rows:
-    parts = row.strip().split('\t')
+     parts = row.strip().split('\t')
 
-    if len(parts)<3:
-       continue
+     if len(parts) <3:
+        continue
 
     codon = parts[0]
     amino_acid = parts[2]
